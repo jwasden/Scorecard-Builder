@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<BorderPane prefHeight="722.0" prefWidth="1090.0" style="-fx-min-width: 1090;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scorecardBuilder.Controller">
+    <center>
+        <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="1061.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab id="add-projects-tab" text="Add Projects">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-min-width: white;">
+                            <children>
+                                <SplitPane dividerPositions="0.29797979797979796" layoutX="21.0" layoutY="64.0" prefHeight="444.0" prefWidth="991.0">
+                                    <items>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                            <children>
+                                                <TextField id="projectName" fx:id="projectName" layoutX="13.0" layoutY="39.0" prefHeight="31.0" prefWidth="263.0" promptText="Enter the key initiative name" style="-fx-border-color: rgba(0,0,0, 100); -fx-border-width: 0px;" />
+                                                <TextArea id="ProjectDescription" fx:id="ProjectDescription" layoutX="15.0" layoutY="104.0" prefHeight="67.0" prefWidth="259.0" promptText="Provide a brief, one sentence description of the project." wrapText="true" />
+                                                <Label layoutX="14.0" layoutY="14.0" style="\@import: Lato;" text="Project Name" />
+                                                <Label layoutX="14.0" layoutY="79.0" text="Project Description" />
+                                                <ComboBox id="percentComplete" fx:id="percentComplete" editable="false" layoutX="16.0" layoutY="207.0" prefHeight="31.0" prefWidth="255.0" promptText="Select percent complete">
+                                                    <items>
+                                                            <FXCollections fx:factory="observableArrayList">
+                                                                    <String fx:id="defaultComplete" fx:value="0%" />
+                                                                    <String fx:value="1%" />
+                                                                    <String fx:value="2%" />
+                                                                    <String fx:value="3%" />
+                                                                    <String fx:value="4%" />
+                                                                    <String fx:value="5%" />
+                                                                    <String fx:value="6%" />
+                                                                    <String fx:value="7%" />
+                                                                    <String fx:value="8%" />
+                                                                    <String fx:value="9%" />
+                                                                    <String fx:value="10%" />
+                                                                    <String fx:value="11%" />
+                                                                    <String fx:value="12%" />
+                                                                    <String fx:value="13%" />
+                                                                    <String fx:value="14%" />
+                                                                    <String fx:value="15%" />
+                                                                    <String fx:value="16%" />
+                                                                    <String fx:value="17%" />
+                                                                    <String fx:value="18%" />
+                                                                    <String fx:value="19%" />
+                                                                    <String fx:value="20%" />
+                                                                    <String fx:value="21%" />
+                                                                    <String fx:value="22%" />
+                                                                    <String fx:value="23%" />
+                                                                    <String fx:value="24%" />
+                                                                    <String fx:value="25%" />
+                                                                    <String fx:value="26%" />
+                                                                    <String fx:value="27%" />
+                                                                    <String fx:value="28%" />
+                                                                    <String fx:value="29%" />
+                                                                    <String fx:value="30%" />
+                                                                    <String fx:value="31%" />
+                                                                    <String fx:value="32%" />
+                                                                    <String fx:value="33%" />
+                                                                    <String fx:value="34%" />
+                                                                    <String fx:value="35%" />
+                                                                    <String fx:value="36%" />
+                                                                    <String fx:value="37%" />
+                                                                    <String fx:value="38%" />
+                                                                    <String fx:value="39%" />
+                                                                    <String fx:value="40%" />
+                                                                    <String fx:value="41%" />
+                                                                    <String fx:value="42%" />
+                                                                    <String fx:value="43%" />
+                                                                    <String fx:value="44%" />
+                                                                    <String fx:value="45%" />
+                                                                    <String fx:value="46%" />
+                                                                    <String fx:value="47%" />
+                                                                    <String fx:value="48%" />
+                                                                    <String fx:value="49%" />
+                                                                    <String fx:value="50%" />
+                                                                    <String fx:value="51%" />
+                                                                    <String fx:value="52%" />
+                                                                    <String fx:value="53%" />
+                                                                    <String fx:value="54%" />
+                                                                    <String fx:value="55%" />
+                                                                    <String fx:value="56%" />
+                                                                    <String fx:value="57%" />
+                                                                    <String fx:value="58%" />
+                                                                    <String fx:value="59%" />
+                                                                    <String fx:value="60%" />
+                                                                    <String fx:value="61%" />
+                                                                    <String fx:value="62%" />
+                                                                    <String fx:value="63%" />
+                                                                    <String fx:value="64%" />
+                                                                    <String fx:value="65%" />
+                                                                    <String fx:value="66%" />
+                                                                    <String fx:value="67%" />
+                                                                    <String fx:value="68%" />
+                                                                    <String fx:value="69%" />
+                                                                    <String fx:value="70%" />
+                                                                    <String fx:value="71%" />
+                                                                    <String fx:value="72%" />
+                                                                    <String fx:value="73%" />
+                                                                    <String fx:value="74%" />
+                                                                    <String fx:value="75%" />
+                                                                    <String fx:value="76%" />
+                                                                    <String fx:value="77%" />
+                                                                    <String fx:value="78%" />
+                                                                    <String fx:value="79%" />
+                                                                    <String fx:value="80%" />
+                                                                    <String fx:value="81%" />
+                                                                    <String fx:value="82%" />
+                                                                    <String fx:value="83%" />
+                                                                    <String fx:value="84%" />
+                                                                    <String fx:value="85%" />
+                                                                    <String fx:value="86%" />
+                                                                    <String fx:value="87%" />
+                                                                    <String fx:value="88%" />
+                                                                    <String fx:value="89%" />
+                                                                    <String fx:value="90%" />
+                                                                    <String fx:value="91%" />
+                                                                    <String fx:value="92%" />
+                                                                    <String fx:value="93%" />
+                                                                    <String fx:value="94%" />
+                                                                    <String fx:value="95%" />
+                                                                    <String fx:value="96%" />
+                                                                    <String fx:value="97%" />
+                                                                    <String fx:value="98%" />
+                                                                    <String fx:value="99%" />
+                                                                    <String fx:value="100%" />
+                                                            </FXCollections>
+                                                    </items>
+                                                    <value>
+                                                        <String fx:value="0%" />
+                                                    </value>
+                                                </ComboBox>
+                                                <Label layoutX="14.0" layoutY="182.0" text="Percent Complete" />
+                                                <Button id="addProject" defaultButton="true" layoutX="48.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#handleAddProject" style="-fx-background-color: rgb(113, 204, 152); -fx-padding: 10px;" text="Add Project to Scorecard" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+                                                <RadioButton id="healthSchedWav" fx:id="scheduleWavering" layoutX="20.0" layoutY="315.0" mnemonicParsing="false" text="Schedule Wavering">
+                                                    <toggleGroup>
+                                                        <ToggleGroup fx:id="Health" />
+                                                    </toggleGroup>
+                                                </RadioButton>
+                                                <RadioButton id="healthBehindSched" fx:id="behindSchedule" layoutX="20.0" layoutY="346.0" mnemonicParsing="false" text="Behind Schedule" toggleGroup="$Health" />
+                                                <RadioButton id="healthOnSched" fx:id="onSchedule" layoutX="20.0" layoutY="283.0" mnemonicParsing="false" selected="true" text="On Schedule" toggleGroup="$Health" />
+                                                <Label layoutX="20.0" layoutY="254.0" text="Project Health" />
+                                            </children>
+                                        </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="440.0" prefWidth="690.0">
+                                            <children>
+                                                <TableView fx:id="tableView"  layoutX="14.0" layoutY="55.0" prefHeight="360.0" prefWidth="661.0">
+                                                    <columns>
+                                                        <TableColumn id="nameColumn" fx:id="nameCol" prefWidth="129.0" text="Name" />
+                                                        <TableColumn id="descriptionColumn" fx:id="descCol" minWidth="1.0" prefWidth="158.0" text="Description" />
+                                                        <TableColumn id="completeColumn" fx:id="completeCol" prefWidth="145.0" text="Complete" />
+                                                        <TableColumn id="healthColumn" fx:id="healthCol" prefWidth="88.0" text="Health" />
+                                                        <TableColumn id="orderColumn" fx:id="orderCol" prefWidth="64.0" text="Order" />
+                                                        <TableColumn id="removeColumn" fx:id="removeCol" prefWidth="76.0" text="Remove" />
+                                                    </columns>
+                                                    <!--<items>-->
+                                                        <!--<FXCollections fx:factory="observableArrayList">-->
+                                                            <!---->
+                                                        <!--</FXCollections>-->
+                                                    <!--</items>-->
+                                                </TableView>
+                                                <Label layoutX="15.0" layoutY="15.0" text="Scorecard Projects">
+                                                    <font>
+                                                        <Font name="Lato-Regular" size="19.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </AnchorPane>
+                                    </items>
+                                </SplitPane>
+                                <Button id="publishScorecard" layoutX="829.0" layoutY="534.0" mnemonicParsing="false" onMouseClicked="#handlePublishScorecard" style="-fx-background-color: rgb(113, 204, 152); -fx-padding: 13px; -fx-font-weight: bold; -fx-font-size: 14pt;" text="Publish Scorecard" textFill="WHITE" />
+                                <Label layoutX="21.0" layoutY="14.0" prefHeight="35.0" prefWidth="264.0" text="Key Initiatives Scorecard — ">
+                                    <font>
+                                        <Font size="21.0" />
+                                    </font>
+                                </Label>
+                                <DatePicker id="scorecardDate" fx:id="scorecardDate" layoutX="282.0" layoutY="16.0" promptText="Enter scorecard date" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Preview">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <WebView layoutX="37.0" layoutY="25.0" prefHeight="542.0" prefWidth="1000.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+    <top>
+        <MenuBar prefHeight="32.0" prefWidth="1090.0" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>
